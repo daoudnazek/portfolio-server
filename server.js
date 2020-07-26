@@ -7,5 +7,7 @@ const server = express();
 const PORT = process.env.PORT || 3500;
 
 server.listen(PORT, () => {
-console.log('hello');
+
 });
+
+server.use(express.static('./public'));
